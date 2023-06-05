@@ -16,7 +16,6 @@ public class Captura4 {
         discriminante = Math.pow(b, 2)-4*a*c;
         x0 = ( -b+Math.sqrt(discriminante) )/(2*a);
         x1 = ( -b-Math.sqrt(discriminante) )/(2*a);
-        
         System.out.println("x0 es "+x0);        
         System.out.println("x1 es "+x1);        
     }
