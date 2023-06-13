@@ -1,5 +1,6 @@
 package condiciones7;
 import java.util.Scanner;
+import java.text.DecimalFormat; //clase para formatear decimales y miles
 public class Condiciones7 {
     public static void main(String[] args) {
         /*Hacer un programa que pregunte el salario mensual de un empleado
@@ -27,7 +28,14 @@ public class Condiciones7 {
         if( antiguedad >= 10 && antiguedad < 20 ) tasaBono = 0.20;
         if( antiguedad >= 20 ) tasaBono = 0.25;
         
-        System.out.println("El bono anual es: "+(salario*tasaBono));
+        double bono = salario*tasaBono;
+        
+        //formatear a miles y a dos decimales el bono
+        DecimalFormat formateador = new DecimalFormat();
+        formateador.setMaximumFractionDigits(2);    //dos decimales
+        
+        System.out.println("El bono anual es: "+formateador.format(bono));
+        System.out.println("valor sin formatear de bono: "+bono);
     }
     
 }
