@@ -73,6 +73,31 @@ public class For01 {
         
         //en los tres casos anteriores son 100 iteraciones
         
+        //6) imprimir los numeros del 10 al 1, de forma descendente de uno en uno
+        System.out.println("**************");
+        for( int i = 10; i >= 1; i-- )
+            System.out.println(i);
+        
+        //7) imprimir los numeros del 10 al 0, de forma descendente de dos en dos
+        //la que tenga menos iteraciones
+        System.out.println("**************");
+        for( int i = 10; i >= 0; i-=2 )
+            System.out.println(i);
+        
+        //8) imprimir los numeros del 100 al 0, de forma descendente de diez en diez
+        //la que tenga menos iteraciones
+        System.out.println("**************");
+        for( int i = 100; i >=0; i-=10 )
+            System.out.println(i);
+        
+        //se puede hacer incrementos en decimales
+        System.out.println("**************");
+        for( float i = 0.5f; i <= 10; i+=0.5f )
+            System.out.println(i);
+        
+        System.out.println("**************");
+        for( double i = 0; i <= 1; i+=0.05 )
+            System.out.println(i);
     }
     
 }
