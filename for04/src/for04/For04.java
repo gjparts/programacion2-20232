@@ -10,10 +10,10 @@ public class For04 {
         double numero;      //numero a leer en cada iteracion
         //variable bandera para el mayor numero leido, se inicializa
         //en el numero mas pequeño permitido por mi arquitectura
-        double mayor = Double.MIN_VALUE;
+        double mayor = Integer.MIN_VALUE;
         //variable bandera para el menor numero leido, se inicializa
         //en el numero mas grande permitido por mi arquitectura
-        double menor = Double.MAX_VALUE;
+        double menor = Integer.MAX_VALUE;
         
         for( int i = 1; i <= 10; i++ )
         {
