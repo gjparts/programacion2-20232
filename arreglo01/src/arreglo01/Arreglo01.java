@@ -58,6 +58,38 @@ public class Arreglo01 {
             System.out.println("indice: "+i+", valor: "+arreglo3[i]);
         }
         
+        /*Hacer un programa que tenga dos arreglos de 25 numeros enteros:
+            * llenar el primer arreglo con numeros al azar
+              entre 1 y 10 (puede haber numeros repetidos)
+            * el segundo arreglo declararlo sin valores iniciales.
+            * El programa copiará todos los numeros del primer arreglo
+              hacia el segundo arreglo pero elevados al cubo.
+          -> al final del programa imprimir el contenido de ambos arreglos.*/
+        int arr1[] = new int[25];
+        int arr2[] = new int[25];
+        Random r = new Random();
+        
+        for( int i = 0; i < arr1.length; i++ )
+        {
+            //llenar el primer arreglo:
+            arr1[i] = r.nextInt(10-1+1)+1;
+            //copiar cada elemento del primer arr. al segundo
+            //arr. pero al cubo
+            arr2[i] = (int)Math.pow(arr1[i],3);
+        }
+        //imprimirlos (en mi caso uno al par del otro)
+        for( int i = 0; i < arr1.length; i++ )
+        {
+            System.out.println(arr1[i]+"\t"+arr2[i]);
+        }
+        //imprimirlos separados (otra forma)
+        System.out.println("Arreglo 1: **********");
+        for( int i = 0; i < arr1.length; i++ )
+            System.out.println(arr1[i]);
+        
+        System.out.println("Arreglo 2: **********");
+        for( int i = 0; i < arr2.length; i++ )
+            System.out.println(arr2[i]);
     }
     
 }
