@@ -24,6 +24,41 @@ public class String01 {
         String str1 = "UNAH", str2 = "Sistemas";
         String nueva = "Bienvenido a "+str2+" en la "+str1;
         System.out.println(nueva);
+        
+        //saber el tamaño de un String
+        System.out.println("La cadena str1 tiene "+str1.length()+" caracteres");
+        //volcar el tamaño de un String en una variable
+        int x1 = str2.length();
+        System.out.println("El tamaño de str2 es "+x1);
+        
+        String nombre = "Gerardo Portillo";
+        System.out.println("La cadena nombre en mayusculas: "+nombre.toUpperCase());
+        System.out.println("La cadena nombre en minusculas: "+nombre.toLowerCase());
+        System.out.println("Contenido de la cadena nombre: "+nombre);
+        //sobreescribir a nombre y dejarla permanentemente en mayusculas
+        nombre = nombre.toUpperCase();
+        System.out.println("Contenido de la cadena nombre: "+nombre);
+        
+        //trim() eliminar los espacios iniciales y finales en un String
+        String verdura = "     Zanahoria verde         ";
+        System.out.println("Variable verdura: ***"+verdura+"***");
+        System.out.println("Tamaño del String verdura: "+verdura.length()+" chars.");
+        //imprimir verdura sin relleno de espacios
+        System.out.println("Variable verdura sin relleno de espacios: ***"+verdura.trim()+"***");
+        System.out.println("Tamaño de verdura aplicando trim: "+verdura.trim().length());
+        //verdura sigue manteniendose sin cambios:
+        System.out.println("Variable verdura: ***"+verdura+"***");
+        //imprimir la variable verdura sin espacios de relleno y todo en mayusculas.
+        //sin alterar a la variable.
+        System.out.println( "***"+verdura.trim().toUpperCase()+"***" );
+        
+        System.out.println("Variable verdura: ***"+verdura+"***");
+        
+        //convertir el contenido de la variable verdura a mayusculas y sin espacios
+        //de relleno y luegro imprimirla.
+        verdura = verdura.trim().toUpperCase();
+        System.out.println("Variable verdura: ***"+verdura+"***");
+        
     }
     
 }
