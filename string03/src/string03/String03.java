@@ -19,13 +19,28 @@ public class String03 {
            //evaluar la opcion
            switch(opcion){
                case 1:
-                   System.out.println("HA PEDIDO LA OPCION 1");
+                   System.out.println("**************************");
+                   System.out.println("CONVERTIR A MAYUSCULAS");
+                   System.out.print("Digitar una cadena: ");
+                   s.nextLine();    //hacer flush al buffer
+                   String str1 = s.nextLine();
+                   System.out.println("La cadena en mayusculas es: "+str1.toUpperCase());
                break;
                case 2:
-                   System.out.println("HA PEDIDO LA OPCION 2");
+                   System.out.println("**************************");
+                   System.out.println("CONVERTIR A MINUSCULAS");
+                   System.out.print("Digitar una cadena: ");
+                   s.nextLine();    //hacer flush al buffer
+                   String str2 = s.nextLine();
+                   System.out.println("La cadena en minusculas es: "+str2.toLowerCase());
                break;
                case 3:
-                   System.out.println("HA PEDIDO LA OPCION 3");
+                   System.out.println("**************************");
+                   System.out.println("LONGITUD DE CADENA");
+                   System.out.print("Digitar una cadena: ");
+                   s.nextLine();    //hacer flush al buffer
+                   String str3 = s.nextLine();
+                   System.out.println("La longitud es: "+str3.length());
                break;
                case 4:
                    System.out.println("Adios!");
