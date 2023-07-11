@@ -1,0 +1,31 @@
+package string07;
+import java.util.Scanner;
+public class String07 {
+    public static void main(String[] args) {
+        /*leer un String y luego imprimirlo dejando tres espacios
+        en blanco entre cada caracter, luego imprimir dicho String
+        de forma invertida caracter por caracter. ejemplo:
+        Digitar String: Gerardo
+        G   e   r   a   r   d   o   
+        odrareG
+        */
+        Scanner s = new Scanner(System.in);
+        String str;
+        System.out.print("Digitar String: ");
+        str = s.nextLine();
+        
+        for( int i = 0; i < str.length(); i++ ){
+            System.out.print(str.charAt(i)+"   ");
+        }
+        System.out.println("");
+        
+        //imprimir al reves char por char
+        for( int i = str.length()-1; i >= 0; i-- ){
+            System.out.print(str.charAt(i));
+        }
+        System.out.println("");
+        
+        
+        
+    }    
+}
