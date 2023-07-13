@@ -1,4 +1,5 @@
 package string08;
+import java.util.Scanner;
 public class String08 {
     public static void main(String[] args) {
         //metodo REPLACE
@@ -25,5 +26,29 @@ public class String08 {
         ejemplo:
         Digitar String: ArlequiN
         Resultado: 4rl3qu1N*/
+        Scanner s = new Scanner(System.in);
+        System.out.print("Digitar String: ");
+        str = s.nextLine();
+        
+        str = str.replace("a", "4");
+        str = str.replace("A", "4");
+        str = str.replace("e", "3");
+        str = str.replace("E", "3");
+        str = str.replace("i", "1");
+        str = str.replace("I", "1");
+        
+        //str = str.replace("a", "4").replace("A", "4").replace("e", "3").replace("E", "3").replace("i", "1").replace("I", "1");
+        
+        System.out.println("String luego de reemaplazar: "+str);
+        
+        /*leer una cadena de texto, y reemplazar dentro de ella todos
+        los espacios en blanco por guiones bajos, ejemplo:
+        Digitar String: Gerardo Josue Portillo
+        resultado: Gerardo_Josue_Portillo*/
+        System.out.print("Digitar String: ");
+        str = s.nextLine();
+        
+        str = str.replace(" ", "_");
+        System.out.println("resultado: "+str);
     }    
 }
